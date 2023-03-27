@@ -1,0 +1,107 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Travel</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(54, 106, 148)
+            }
+            h2{
+                text-align: center;
+                color:navy;
+                border: 1px solid palevioletred;
+                padding: 15px;
+                font-size: 18px;
+                border-radius: 4px;}
+            img{
+                display: block;
+                margin: 0 auto;
+                max-width: 90%;
+                border-radius: 10px;
+            }
+            p{
+                line-height: 1.5;
+                font-size: 13px;
+            }
+            .travel{
+                display: block;
+                color:rgb(54, 106, 148);
+                margin-top: 10px;
+                text-decoration: none;
+
+            }
+            button {
+                display: block;
+                margin: 20px auto;
+                background: pink;
+                color: rgb(54, 106, 148);
+                font-size: 18px;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 6px;
+                box-shadow: 5px 5px 10px rgba( 0,0,0,0.03);
+                transition: all 200ms ease-in;
+
+            }
+            button:hover
+            {
+                opacity: 0.9;
+                cursor:pointer;
+            }
+            h3{ 
+                text-align: center;
+                color:rgb(54, 106, 148);
+            }
+
+    </style>
+</head>
+<body>
+<h1>
+I Love to Travel.
+</h1>
+
+<h2> 
+Especially to the Ocean
+<img src=" https://imageio.forbes.com/specials-images/dam/imageserve/1141969923/960x0.jpg?format=jpg&width=960">
+<p>
+    What's on your travel bucket list? If you're like most people, the more you travel, the more places you add to your
+    bucket list.
+</p>
+<br>
+<a href=" https://www.forbes.com/sites/laurabegleybloom/2019/09/04/bucket-list-travel-the-top-50-places-in-the-world/?sh=6d9de89320cf"
+
+target="blank"
+class="travel"
+>
+    Learn the top 50 places to travel.
+</a>
+
+</h2>
+<button class="travelButton">
+    Travel
+</button>
+<br>
+<h3>
+This Page was created by Kassidy Johnson
+</h3>
+<script>
+    function travel(){
+        let name=prompt("What is your name?");
+
+        let email= prompt(" What is your email address?");
+        alert(
+            "Thank you" + 
+            name + 
+            "We will be in touch by email."+
+            email
+        );
+    }
+    let travelButton= document.querySelector(".travelButton");
+    travelButton.addEventListener("click", travel);
+</script>
+</body>
+</html>
